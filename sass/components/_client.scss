@@ -1,0 +1,65 @@
+.client-list{
+    display: flex;
+    justify-content: space-between;
+  
+}
+.client-title{
+     font-weight: bold;
+    font-size: 36px;
+    line-height: 1.1;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: var(--primary-text-color);
+    margin-bottom: 50px;
+}
+
+/*.client-item{
+    background-color:var(--background-color);
+     width: calc((100% - 150px) / 6);
+     border: 1px solid #AFB1B8;
+    box-sizing: border-box;
+    border-radius: 4px;
+
+}*/
+
+/*.client-item:not(:first-child) {
+    margin-left: 30px;
+}*/ 
+.client-link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 170px;
+    height: 92px;
+     border: 1px solid var(--primery-icon-color);
+     background-color: var(--background-color);
+    border-radius: 4px;
+
+    transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1) ;
+
+    &:hover,
+    &:focus      
+ {
+     border-color: var(--background-button-hover);
+
+}
+    
+}
+
+
+.client-link:hover .client-icon,
+.client-link:focus .client-icon
+{
+   fill: var(--background-button-hover);
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1) ;
+
+}
+.client-icon {
+    fill: var(--primery-icon-color);
+  
+}
+/*.client-icon:hover{
+    fill: var(--background-button-hover);
+}*/
+
+/*Кінець секції Постійні клієнти*/

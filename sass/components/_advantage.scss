@@ -1,0 +1,64 @@
+.advantage{
+   padding-bottom: 0;
+
+&__list{
+    display: flex;
+}
+}
+
+.advantage__item{
+    width: 270px;
+
+    &:not(:first-child) {
+      margin-left: 30px;
+}
+}
+
+.advantage__blok {
+    display: flex;
+    height: 120px;
+    background: var(--background-button-portfolio);
+    border-radius: 4px;
+   /*background-image: url("../images/symbol-defs.svg#icon-antenna1");*/
+    margin-bottom: 30px;
+    align-items: center;
+    justify-content: center;
+}
+
+/*Інший варіант для не інтерактивних елементів додавати фото через бекграунд імедж*/
+ /*.advantage-item:nth-child(1) {
+   background-image: url("../images/symbol-defs.svg#icon-antenna1");
+  
+
+ .advantage-item:nth-child(2)::before{
+     background-image: url("../images/symbol-defs.svg#icon-clock1");
+    
+ }
+  .advantage-item:nth-child(3)::before{
+     background-image: url("../images/diagram1.png");
+ }*/
+
+
+.advantage h2{
+     position: absolute;
+     width: 1px;
+     height: 1px;
+     margin: -1px;
+     padding: 0;
+     overflow: hidden;
+     border: 0;
+     clip: rect(0000);
+}
+.advantage__title {
+    line-height: 1.1;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: var(--primary-text-color);
+    margin-bottom: 10px;
+}
+
+.advantage__content {
+    line-height: 1.7;
+    letter-spacing: 0.03em;
+    color: var(--page-text-color);
+}

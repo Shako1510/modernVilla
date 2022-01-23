@@ -1,0 +1,12 @@
+:root{
+   --primary-text-color: #212121;
+    --title-text-color: #FFFFFF;
+    --accent-text-color: #2196F3;
+    --page-text-color:#757575;
+    --footer-link-color: #FFFFFF99;
+    --logo-color:  #000000;
+    --background-color:#FFFFFF;
+    --background-color-main:#2F303A;
+    --background-button-portfolio: #F5F4FA;
+    --background-button-hover: #2196F3;
+}
