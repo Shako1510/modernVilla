@@ -3,11 +3,12 @@ body {
     font-size: 14px;
     background-color: var(--background-color);
     color: var(--page-text-color);
-
-  &.modal-open{
+ &.is-open{
       overflow: hidden;
   }
+ 
 }
+
 
 a{
     text-decoration: none;
@@ -27,7 +28,11 @@ li {
 }
 
 .section{
-    padding: 94px 0;
+    width: 100%;
+    @media screen and(max-width:1199px){
+        padding: 94px 0;
+    }
+    
 }
 
 
@@ -40,6 +45,9 @@ li {
    
     @media  screen and (min-width:460px) {
     width: 460px;
+    }
+    @media  screen and (min-width:768px) {
+    width: 768px;
     }
 }
 
