@@ -16,7 +16,7 @@
         rel="stylesheet">
 </head>
 
-<body class="is-open">
+<body>
     <!--Шапка -->
     <header class="page-header">
         <div class="container hed-container">
@@ -120,12 +120,13 @@
                             </div>
 
                             <!--<div class="modal-policy"-->
-                            <input type="checkbox" name="policy" id="policy" class="policy-checkbox" checked>
-                            <label for="policy" class="policy-box">
-                                Соглашаюсь с рассылкой и принимаю <a>Условия
-                                    договора</a></label>
-
-                            <button type="submit">Отправить</button>
+                            <div class="modal-policy">
+                                <input type="checkbox" name="policy" id="policy" class="policy-checkbox" checked>
+                                <label for="policy" class="policy-box">
+                                    Соглашаюсь с рассылкой и принимаю <a>Условия
+                                        договора</a></label>
+                            </div>
+                            <button class="modal-form__button" type="submit">Отправить</button>
                         </form>
                     </div>
                 </div>
@@ -215,8 +216,7 @@
             <div class="container">
                 <h2 class="team__title">Наша команда</h2>
                 <ul class="team__list">
-                    <li class="team__item"> <img src="./images/img1.jpg" class="team__picture" alt="Игорь Демьяненко"
-                            width="270">
+                    <li class="team__item"> <img src="./images/img1.jpg" class="team__picture" alt="Игорь Демьяненко">
                         <div class="team-details">
                             <h3 class="team-name">Игорь Демьяненко</h3>
                             <p class="team-content">Product Designer</p>
@@ -252,8 +252,7 @@
                             </ul>
                         </div>
                     </li>
-                    <li class="team__item"><img src="./images/img2.jpg" class="team__picture" alt="Ольга Репина"
-                            width="270">
+                    <li class="team__item"><img src="./images/img2.jpg" class="team__picture" alt="Ольга Репина">
                         <div class="team-details">
                             <h3 class="team-name">Ольга Репина</h3>
                             <p class="team-content">Frontend Developer</p>
@@ -289,8 +288,7 @@
                             </ul>
                         </div>
                     </li>
-                    <li class="team__item"><img src="./images/img3.jpg" class="team__picture" alt="Николай Тарасов"
-                            width="270">
+                    <li class="team__item"><img src="./images/img3.jpg" class="team__picture" alt="Николай Тарасов">
                         <div class="team-details">
                             <h3 class="team-name">Николай Тарасов</h3>
                             <p class="team-content">Marketing</p>
@@ -326,8 +324,7 @@
                             </ul>
                         </div>
                     </li>
-                    <li class="team__item"><img src="./images/img4.jpg" class="team__picture" alt="Михаил Ермаков"
-                            width="270">
+                    <li class="team__item"><img src="./images/img4.jpg" class="team__picture" alt="Михаил Ермаков">
                         <div class="team-details">
                             <h3 class="team-name">Михаил Ермаков</h3>
                             <p class="team-content">UI Designer</p>
@@ -367,47 +364,47 @@
             </div>
         </section>
         <!--Постоянные клиееты-->
-        <section class=" client section">
+        <section class="client section">
             <div class="container">
-                <h2 class="client-title">Постоянные клиенты</h2>
-                <ul class="client-list">
-                    <li class="client-item">
-                        <a class="client-link" href="#">
+                <h2 class="client__title">Постоянные клиенты</h2>
+                <ul class="client__list">
+                    <li class="client__item">
+                        <a class="client__link" href="#">
                             <svg class="client-icon" width="106" height="60">
                                 <use href=" images/symbol-defs.svg#icon-group1"></use>
                             </svg>
                         </a>
                     </li>
-                    <li class="client-item">
-                        <a class="client-link" href="#">
+                    <li class="client__item">
+                        <a class="client__link" href="#">
                             <svg class="client-icon" width="106" height="60">
                                 <use href=" images/symbol-defs.svg#icon-group2"></use>
                             </svg>
                         </a>
                     </li>
-                    <li class="client-item">
-                        <a class="client-link" href="#">
+                    <li class="client__item">
+                        <a class="client__link" href="#">
                             <svg class="client-icon" width="106" height="60">
                                 <use href="images/symbol-defs.svg#icon-group3"></use>
                             </svg>
                         </a>
                     </li>
-                    <li class="client-item">
-                        <a class="client-link" href="#">
+                    <li class="client__item">
+                        <a class="client__link" href="#">
                             <svg class="client-icon" width="106" height="60">
                                 <use href="images/symbol-defs.svg#icon-group4"></use>
                             </svg>
                         </a>
                     </li>
-                    <li class="client-item">
-                        <a class="client-link" href="#">
+                    <li class="client__item">
+                        <a class="client__link" href="#">
                             <svg class="client-icon" width="106" height="60">
                                 <use href="images/symbol-defs.svg#icon-group5"></use>
                             </svg>
                         </a>
                     </li>
-                    <li class="client-item">
-                        <a class="client-link" href="#">
+                    <li class="client__item">
+                        <a class="client__link" href="#">
                             <svg class="client-icon" width="106" height="60">
                                 <use href="images/symbol-defs.svg#icon-group6"></use>
                             </svg>
@@ -419,58 +416,62 @@
         </section>
     </main>
     <footer class="footer">
-        <div class="container">
-            <div class="footer-info">
-                <a href="" class="footlogo logo"> Web<span class="footer-logo">Studio</span></a>
-                <address class="footer-contact">
-                    <ul class="footer-list">
-                        <li class="footer-item"> <a href="" class="footer-adress">г. Киев, пр-т Леси Украинки, 26</a>
+        <div class="container footer__container">
+            <div class="wrap-container">
+                <div class="footer-info">
+                    <a href="" class="footlogo logo"> Web<span class="footer-logo">Studio</span></a>
+                    <address class="footer-contact">
+                        <ul class="footer-list">
+                            <li class="footer-item"> <a href="" class="footer-adress">г. Киев, пр-т Леси Украинки,
+                                    26</a>
+                            </li>
+                            <li class="footer-item"> <a href="" class="footer-link"> info@example.com</a></li>
+                            <li class="footer-item"><a href="" class="footer-link"> +38 099 111 11 11</a></li>
+                        </ul>
+                    </address>
+                </div>
+                <div class="follow">
+                    <h3>Присоединяйтесь</h3>
+                    <ul class="follow-list">
+                        <li><a href="" class="follow-link">
+                                <svg class="follow-icon" width="20" height="20">
+                                    <use href="images/symbol-defs.svg#icon-instagram1"></use>
+                                </svg>
+                            </a></li>
+                        <li><a href="" class="follow-link">
+                                <svg class="follow-icon" width="20" height="20">
+                                    <use href="images/symbol-defs.svg#icon-twitter1"></use>
+                                </svg>
+                            </a></li>
+                        <li><a href="" class="follow-link">
+                                <svg class="follow-icon" width="20" height="20">
+                                    <use href="images/symbol-defs.svg#icon-facebook1"></use>
+                                </svg>
+                            </a></li>
+                        <li><a href="" class="follow-link">
+                                <svg class="follow-icon" width="20" height="20">
+                                    <use href="images/symbol-defs.svg#icon-linkedin1"></use>
+                                </svg>
+                            </a>
                         </li>
-                        <li class="footer-item"> <a href="" class="footer-link"> info@example.com</a></li>
-                        <li class="footer-item"><a href="" class="footer-link"> +38 099 111 11 11</a></li>
                     </ul>
-                </address>
-            </div>
-            <div class="follow">
-                <h3>Присоединяйтесь</h3>
-                <ul class="follow-list">
-                    <li><a href="" class="follow-link">
-                            <svg class="follow-icon" width="20" height="20">
-                                <use href="images/symbol-defs.svg#icon-instagram1"></use>
+                </div>
+                <div class="subscribe">
+                    <h3 class="subscribe__title">Подпишитесь на рассылку</h3>
+                    <form class="foter-form">
+                        <label for="email"></label>
+                        <input type="email" name="email" class="footer-input" placeholder="E-mail">
+                        <button class="footer-button" type="submit">Подписаться
+                            <svg class="footer-button__icon" width="24" height="24">
+                                <use href="images/symbol-defs.svg#icon-iconsend"></use>
                             </svg>
-                        </a></li>
-                    <li><a href="" class="follow-link">
-                            <svg class="follow-icon" width="20" height="20">
-                                <use href="images/symbol-defs.svg#icon-twitter1"></use>
-                            </svg>
-                        </a></li>
-                    <li><a href="" class="follow-link">
-                            <svg class="follow-icon" width="20" height="20">
-                                <use href="images/symbol-defs.svg#icon-facebook1"></use>
-                            </svg>
-                        </a></li>
-                    <li><a href="" class="follow-link">
-                            <svg class="follow-icon" width="20" height="20">
-                                <use href="images/symbol-defs.svg#icon-linkedin1"></use>
-                            </svg>
-                        </a>
-                    </li>
-                </ul>
+                        </button>
+                    </form>
+                </div>
+
             </div>
 
-            <form class="foter-form">
-                <h3 class="foter-form__title">Подпишитесь на рассылку</h3>
-                <label for="email"></label>
-                <input type="email" name="email" class="footer-input" placeholder="E-mail">
-                <button class="footer-button" type="submit">Подписаться
-                    <svg class="footer-button__icon" width="24" height="24">
-                        <use href="images/symbol-defs.svg#icon-iconsend"></use>
-                    </svg>
-                </button>
-            </form>
         </div>
-
-
     </footer>
     <script src="./JS/modal.js"></script>
     <script src="./JS/menu.js"></script>

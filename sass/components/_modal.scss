@@ -20,11 +20,17 @@
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%);
+    padding: 40px;
+    transform: translate(-50%, -50%) scale(1);
 
-    width: 528px;
-    min-height: 581px;
+    @media screen and (min-width:550px) and 
+    (max-width:1199px){
+       width: 450px;
+        min-height: 609px;
+ 
+    }
 
+    
     background-color: var(--background-color);
     border-radius: 4px;
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);;
@@ -65,8 +71,7 @@
 
 
 .modal-form{
-    width: 528px;
-    padding: 40px;
+  
 
     & p{
     font-weight: bold;
@@ -103,7 +108,7 @@
 
 .fild-blok{
     position: relative;
-    width: 448px;
+    width: 100%;
     height: 40px;  
     margin-bottom: 10px;
    
@@ -151,7 +156,7 @@
 .modal-comment{
     display: flex;
     flex-direction: column;
-    width: 448px;
+    width: 100%;
     height: 120px;
    
 }
@@ -181,8 +186,15 @@
 
 }
 
+.modal-policy{
+     width: 100%;
+}
 
 .policy-box{
+    @media screen and (max-width:1199px){
+        font-size: 12px;
+        line-height: 1.1;
+    }
     margin-bottom: 30px;
     font-size: 14px;
     line-height: 1.7;
@@ -231,10 +243,11 @@
 }
 
 
-.modal-form button {
-    display: inline-flex;
+.modal-form__button{
+    display: block;
+    width: 200px;
     padding: 10px 28px;
-    margin-left: 165px;
+    margin: 0 auto;
     border: none;
     border-radius: 4px;
     background-color: var(--background-button-hover);
