@@ -1,14 +1,25 @@
 // .advantage{
 //    padding-bottom: 0;
 
-// // &__list{
-// //     // display: flex;
-// // }
-// }
+.advantage__list{
 
-// .advantage__item{
-//     width: 270px;
+     @media screen and(min-width:768px){
+            display: flex;
+        }
+         @media screen and(min-width:768px) and(max-width:1199px){
+            flex-wrap: wrap;
+            margin: -15px;
+        }
+    // display: flex;
+}
+ 
 
+ .advantage__item{
+   @media screen and (min-width:768px) and(max-width:1199px){
+             width: calc((100% - 4 * 15px) / 2);
+             margin: 15px;
+        }
+ }
 // //     &:not(:first-child) {
 // //       margin-left: 30px;
 // // }
