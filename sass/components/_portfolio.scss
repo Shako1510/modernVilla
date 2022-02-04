@@ -19,8 +19,11 @@
     display: flex;
     justify-content: center;
     align-items: center;
+     margin-bottom:14px;
     }
-  
+  @media screen and(min-width:1200px){
+margin-bottom: 34px;
+  }
 //     & .button-item + .button-item {
 //     margin-left: 8px;
 //     margin-bottom: 15px;
