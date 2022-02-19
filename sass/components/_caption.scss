@@ -52,6 +52,40 @@
     background-position: center;
     background-size: cover;
 
+ @media screen and (max-width: 767px){
+     background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4),
+    rgba(47, 48, 58, 0.4)),
+    url("../../images/img14mob.jpg");
+
+@media  (min-device-pixel-radio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx)
+{
+background-image:linear-gradient(to right, rgba(47, 48, 58, 0.4),
+    rgba(47, 48, 58, 0.4)), url("../../images/img14-@2x-mob.jpg");
+}
+}
+   
+@media screen and (min-width: 768px) and (max-width:1199px){
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4),
+    rgba(47, 48, 58, 0.4)),
+    url("../../images/img14-tab.jpg");
+
+@media  (min-device-pixel-radio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx)
+{
+background-image:linear-gradient(to right, rgba(47, 48, 58, 0.4),
+    rgba(47, 48, 58, 0.4)), url("../../images/img14-tab@2x.jpg");
+}
+}
+
+@media screen and (min-width: 1200px){
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4),
+    rgba(47, 48, 58, 0.4)),
+    url("../../images/");
+}
+
    @media screen and(max-width:1199px){
         padding-top: 118px;
         padding-bottom: 118px;
