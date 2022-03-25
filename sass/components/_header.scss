@@ -160,7 +160,6 @@
  }
 
  .contakt-thumb{
-     
      @media screen and(max-width:767px){
         position: absolute;
         left: 40px;
@@ -211,20 +210,32 @@
     font-size: 12px;
     line-height: 14px;
 }
- @media screen and(min-width:1200px) {
+    @media screen and(min-width:1200px) {
     display: inline-flex;
     font-size: 14px;
     line-height: 16px;
 }
+
+ @media screen and(max-width:767px){
+           &[href="tel:+380961111111"]{
+        padding: 0;
+        font-weight: 500;
+        font-size: 34px;
+        line-height: 40px;
+        letter-spacing: 0.02em;
+     color:var(--accent-text-color);
+    }
     }
 
-    @media screen and(max-width:767px){
+     @media screen and(max-width:767px){
            &[href ="mailto:info@devstudio.com"]{
-    font-weight: 500;
-    font-size: 24px;
-    line-height: 28px;
-    letter-spacing: 0.02em;
-     color:var(--page-text-color);
+               padding: 0;
+        font-weight: 500;
+        font-size: 24px;
+        line-height: 28px;
+        letter-spacing: 0.02em;
+        color:var(--page-text-color);
+    }
     }
 
     @media screen and(min-width:768px) and(max-width:1199px){
@@ -236,15 +247,15 @@
 
    
 
- @media screen and(max-width:767px){
-           &[href="tel:+380961111111"]{
-    font-weight: 500;
-    font-size: 34px;
-    line-height: 40px;
-    letter-spacing: 0.02em;
-     color:var(--accent-text-color);
-}
-    }
+//  @media screen and(max-width:767px){
+//            &[href="tel:+380961111111"]{
+//     font-weight: 500;
+//     font-size: 34px;
+//     line-height: 40px;
+//     letter-spacing: 0.02em;
+//      color:var(--accent-text-color);
+// }
+//     }
     @media screen and(min-width:768px) and(max-width:1199px){
          &[href="tel:+380961111111"]{
         display: flex;
@@ -270,14 +281,13 @@
     @media screen and (min-width:1200px) {
         &:not(:first-child){
             margin-right: 30px;
-    margin-bottom: 0;
+            margin-bottom: 0;
         }
     }
 
  }
 .contakt__item +  .contakt__item{
     @media screen and (min-width:1200px) {
-    
     margin-left: 30px;
         }
     

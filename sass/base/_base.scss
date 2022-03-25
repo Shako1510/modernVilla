@@ -2,11 +2,10 @@ body {
     font-family: "Roboto", sans-serif;
     font-size: 14px;
     background-color: var(--background-color);
-    color: var(--page-text-color);
- &.is-open{
-      overflow: hidden;
-  }
- 
+    color: var(--page-text-color); 
+    &.is-open {
+        overflow: hidden;
+    }
 }
 
 
