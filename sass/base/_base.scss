@@ -2,38 +2,45 @@ body {
     font-family: "Roboto", sans-serif;
     font-size: 14px;
     background-color: var(--background-color);
-    color: var(--page-text-color); 
+    color: var(--page-text-color);
+
     &.is-open {
         overflow: hidden;
     }
 }
 
 
-a{
+a {
     text-decoration: none;
 }
-h1, h2, h3, p{
+
+h1,
+h2,
+h3,
+p {
     margin: 0;
     list-style: none;
 }
-ul{
-list-style: none;
-margin: 0;
-padding: 0;
+
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
 }
 
 li {
     display: inline-block;
 }
 
-.section{
+.section {
     padding-top: 94px;
     padding-bottom: 94px;
     width: 100%;
-    @media screen and(max-width:1199px){
+
+    @media screen and (max-width:1199px) {
         padding: 94px 0;
     }
-    
+
 }
 
 
@@ -42,16 +49,17 @@ li {
     margin-right: auto;
     padding-left: 15px;
     padding-right: 15px;
-   
-   
-    @media  screen and (min-width:460px) {
-    width: 460px;
+
+
+    @media screen and (min-width:460px) {
+        width: 460px;
     }
-    @media  screen and (min-width:768px) {
-    width: 768px;
+
+    @media screen and (min-width:768px) {
+        width: 768px;
     }
-     @media  screen and (min-width:1200px) {
-    width: 1200px;
+
+    @media screen and (min-width:1200px) {
+        width: 1200px;
     }
 }
-

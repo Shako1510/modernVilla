@@ -1,69 +1,75 @@
-.advantage{
+.advantage {
 
-    @media screen and(max-width:1199px){
-            padding-top: 60px;
-            padding-bottom: 60px;
-        }
-   
+    @media screen and (max-width:1199px) {
+        padding-top: 60px;
+        padding-bottom: 60px;
+    }
+
 }
-.advantage__list{
 
-     @media screen and(min-width:768px){
-            display: flex;
-        }
-         @media screen and(min-width:768px) and(max-width:1199px){
-            flex-wrap: wrap;
-            margin: -15px;
-        }
+.advantage__list {
+
+    @media screen and (min-width:768px) {
+        display: flex;
+    }
+
+    @media screen and (min-width:768px) and (max-width:1199px) {
+        flex-wrap: wrap;
+        margin: -15px;
+    }
+
     // display: flex;
 }
- 
 
- .advantage__item{
-   @media screen and (min-width:768px) and(max-width:1199px){
-             width: calc((100% - 4 * 15px) / 2);
-             margin: 15px;
-        }
- }
+
+.advantage__item {
+    @media screen and (min-width:768px) and (max-width:1199px) {
+        width: calc((100% - 4 * 15px) / 2);
+        margin: 15px;
+    }
+}
+
 // //     &:not(:first-child) {
 // //       margin-left: 30px;
 // // }
 // }
-.advantage__item:not(:last-child){
-    @media screen and(max-width:767px){
+.advantage__item:not(:last-child) {
+    @media screen and (max-width:767px) {
         margin-bottom: 30px;
     }
-    @media screen and(min-width:1200px){
+
+    @media screen and (min-width:1200px) {
         margin-right: 30px;
     }
 }
 
 .advantage__blok {
-    
+
     height: 120px;
     background: var(--background-button-portfolio);
     border-radius: 4px;
-   /*background-image: url("../images/symbol-defs.svg#icon-antenna1");*/
+    /*background-image: url("../images/symbol-defs.svg#icon-antenna1");*/
     margin-bottom: 30px;
     align-items: center;
-    
-    @media screen and(max-width:1199px){
+
+    @media screen and (max-width:1199px) {
         display: flex;
         justify-content: center;
         width: 100%;
         padding-left: 0;
         padding-right: 0;
     }
-    @media screen and(min-width:1200px){
+
+    @media screen and (min-width:1200px) {
         display: flex;
         justify-content: center;
-       
+
     }
-    
+
 }
 
 /*Інший варіант для не інтерактивних елементів додавати фото через бекграунд імедж*/
- /*.advantage-item:nth-child(1) {
+/*.advantage-item:nth-child(1) {
    background-image: url("../images/symbol-defs.svg#icon-antenna1");
   
 
@@ -76,20 +82,22 @@
  }*/
 
 
-.advantage h2{
-     position: absolute;
-     width: 1px;
-     height: 1px;
-     margin: -1px;
-     padding: 0;
-     overflow: hidden;
-     border: 0;
-     clip: rect(0000);
-     @media screen and(max-width:1199px){
-         padding-top: 60px;
-         padding-bottom: 60px;
-     }
+.advantage h2 {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    padding: 0;
+    overflow: hidden;
+    border: 0;
+    clip: rect(0000);
+
+    @media screen and (max-width:1199px) {
+        padding-top: 60px;
+        padding-bottom: 60px;
+    }
 }
+
 .advantage__title {
     font-weight: bold;
     font-size: 14px;
@@ -99,7 +107,7 @@
     color: var(--primary-text-color);
     margin-bottom: 10px;
 
-    @media screen and(max-width:767px){
+    @media screen and (max-width:767px) {
         text-align: center;
     }
 }
