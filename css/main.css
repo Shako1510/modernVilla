@@ -1723,6 +1723,7 @@ input[type=checkbox] {
   background-size: contain;
   background-origin: border-box;
   border-color: var(--button-link-color);
+  background-image: url(../images/icon-check.svg);
 }
 
 .span-box {
