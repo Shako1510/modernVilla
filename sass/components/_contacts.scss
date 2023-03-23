@@ -1,0 +1,120 @@
+.contacts {
+    display: flex;
+    padding: 0;
+    margin-left: auto;
+    margin-top: 0;
+    margin-bottom: 0;
+    align-items: center;
+    justify-content: center;
+
+    @media screen and (max-width: 767px) {
+        display: none;
+    }
+
+    @media screen and (min-width: 768px) and (max-width: 1199px) {
+        display: block;
+    }
+}
+
+
+
+.contacts__item {
+    margin-right: 50px;
+
+    @media screen and (max-width: 767px) {
+        margin-bottom: 32px;
+        margin-right: 0;
+    }
+
+    @media screen and (min-width: 768px) and (max-width: 1199px) {
+        margin-right: 0;
+        margin-bottom: 10px;
+    }
+}
+
+
+
+.contacts .contacts-item:last-child {
+    margin-right: 0;
+}
+
+
+.contacts__mail {
+    display: flex;
+    align-items: center;
+
+    height: 16px;
+    color: var(--main-font-color);
+    letter-spacing: 0.02em;
+    text-decoration: none;
+
+    transition-property: color;
+    transition-duration: 250ms;
+    transition-timing-function: var(--сubic);
+
+    @media screen and (max-width: 767px) {
+        font-size: 24px;
+        font-weight: 500;
+        line-height: 1.17;
+        color: var(--main-font-color);
+
+    }
+
+    @media screen and (min-width: 768px) and (max-width: 1199px) {
+        font-size: 12px;
+        line-height: 1.17;
+        text-align: left;
+        margin-bottom: 10px;
+    }
+
+
+    &:hover,
+    &:focus {
+        color: var(--button-link-color);
+    }
+}
+
+
+.contacts__tel {
+    display: flex;
+    align-items: center;
+
+    color: var(--main-font-color);
+    letter-spacing: 0.02em;
+    text-decoration: none;
+    height: 16px;
+
+    transition-property: color;
+    transition-duration: 250ms;
+    transition-timing-function: var(--сubic);
+
+    @media screen and (max-width: 479px) {
+        font-size: 24px;
+        line-height: 1.17;
+        color: var(--button-link-color);
+    }
+
+    @media screen and (min-width: 480px) and (max-width: 767px) {
+        font-size: 34px;
+        line-height: 1.17;
+        color: var(--button-link-color);
+    }
+
+
+    @media screen and (min-width: 768px) and (max-width: 1199px) {
+        display: flex;
+        align-items: center;
+        font-size: 12px;
+    }
+
+
+    &:hover,
+    &:focus {
+        color: var(--button-link-color);
+    }
+}
+
+.contacts-icon {
+    margin-right: 10px;
+    fill: currentColor;
+}

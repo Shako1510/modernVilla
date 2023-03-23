@@ -1,0 +1,130 @@
+.nav__btn {
+    position: relative;
+    min-width: 40px;
+    height: 40px;
+    padding: 0;
+    margin-top: 10px;
+    margin-bottom: 10px;
+
+    margin-left: auto;
+    border: none;
+    background-color: transparent;
+    z-index: 1;
+
+    &.is-active .nav__icon {
+        position: fixed;
+        top: 0;
+        right: 0;
+        margin-top: 10px;
+        margin-right: 10px;
+    }
+
+
+    & .nav-icon__close {
+        display: none;
+    }
+
+    &.is-active .nav-icon__close {
+        display: block;
+    }
+
+    &.is-active .nav-icon__open {
+        display: none;
+    }
+
+
+    &:hover .nav-icon__close,
+    &:focus .nav-icon__close {
+        fill: var(--button-link-color)
+    }
+
+
+    &:hover .nav-icon__open,
+    &:focus .nav-icon__open {
+        fill: var(--button-link-color);
+    }
+
+
+    @media screen and (min-width: 767px) {
+        display: none;
+    }
+}
+
+
+.nav {
+    display: flex;
+    align-items: center;
+}
+
+.logo__nav {
+    padding-top: 24px;
+    padding-bottom: 25px;
+    margin-right: 93px;
+}
+
+.studio__nav {
+    color: var(--title-font);
+}
+
+
+.nav__list {
+    display: flex;
+    padding: 0;
+    margin: 0;
+
+    @media screen and (max-width: 767px) {
+        display: none;
+    }
+}
+
+.nav__item {
+    padding: 0;
+    margin-right: 50px;
+}
+
+.nav-list .nav-list-item:last-child {
+    margin-right: 0;
+}
+
+
+
+
+.nav__item-menu {
+    font-size: 40px;
+    font-weight: 500;
+    line-height: 1.18;
+    letter-spacing: 0.02em;
+    text-align: left;
+    padding: 32px 0;
+
+    @media screen and (max-width: 767px) {
+        padding-top: 0;
+    }
+}
+
+
+
+.nav__link {
+    display: block;
+    padding-top: 32px;
+    padding-bottom: 32px;
+    color: var(--title-font);
+    letter-spacing: 0.02em;
+    text-decoration: none;
+
+    transition-property: color;
+    transition-duration: 250ms;
+    transition-timing-function: var(--сubic);
+
+    @media screen and (max-width: 767px) {
+        padding-top: 0;
+        padding-bottom: 0;
+
+    }
+
+
+    &:hover,
+    &:focus {
+        color: var(--button-link-color);
+    }
+}

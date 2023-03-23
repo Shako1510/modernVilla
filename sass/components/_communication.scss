@@ -1,0 +1,56 @@
+.communication__item {
+    margin-right: 10px;
+    border-radius: 50%;
+    width: 44px;
+    height: 44px;
+}
+
+.communication__item:last-child {
+    margin-right: 0;
+}
+
+
+.communication__link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    transition-property: color, background;
+    transition-duration: 250ms;
+    transition-timing-function: var(--сubic);
+}
+
+.team-communication__link {
+    color: var(--icons-color);
+    background-color: var(--background-header);
+
+
+    &:hover,
+    &:focus {
+        color: var(--background-header);
+        background-color: var(--button-link-color);
+    }
+}
+
+.communication__icon {
+    fill: currentColor;
+}
+
+//communication footer
+
+.communication__link--dark {
+    color: var(--background-header);
+    background-color: rgba(255, 255, 255, 0.1);
+
+
+    &:hover,
+    &:focus {
+        background-color: var(--button-link-color);
+    }
+}
+
+.communication__icon--dark {
+    fill: currentColor;
+}
