@@ -102,5 +102,6 @@
     &:hover,
     &:focus {
         background-color: var(--button-link-hover);
+        color: var(--main-font-color);
     }
 }
