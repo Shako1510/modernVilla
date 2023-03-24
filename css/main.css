@@ -11,7 +11,7 @@
   --button-link-hover: #38b193;
   --footer-contacts: rgba(255, 255, 255, 0.6);
   --icons-color: rgb(110, 110, 112);
-  --сubic: cubic-bezier(0.4, 0, 0.2, 1);
+  --сubic: cubic-bezier(0.4, 0, 0.2, 0.5);
 }
 
 :rootі {
@@ -209,10 +209,10 @@ img {
   margin-bottom: 10px;
   margin-left: auto;
   border: none;
-  background-color: transparent;
+  background-color: var(--background-header);
   z-index: 1;
 }
-.nav__btn.is-active .nav__icon {
+.nav__btn.is-active {
   position: fixed;
   top: 0;
   right: 0;
@@ -224,12 +224,13 @@ img {
 }
 .nav__btn.is-active .nav-icon__close {
   display: block;
+  fill: var(--button-link-color);
 }
 .nav__btn.is-active .nav-icon__open {
   display: none;
 }
 .nav__btn:hover .nav-icon__close, .nav__btn:focus .nav-icon__close {
-  fill: var(--button-link-color);
+  fill: var(--title-font);
 }
 .nav__btn:hover .nav-icon__open, .nav__btn:focus .nav-icon__open {
   fill: var(--button-link-color);
@@ -598,6 +599,9 @@ img {
 .hero__button:hover, .hero__button:focus {
   background-color: var(--button-link-hover);
   color: var(--main-font-color);
+  -webkit-transition: color 300ms var(--сubic);
+  -o-transition: color 300ms var(--сubic);
+  transition: color 300ms var(--сubic);
 }
 
 .peculiarities {
@@ -1514,7 +1518,7 @@ img {
   height: 30px;
   border-radius: 50%;
   border: 1px solid;
-  border-color: rgba(0, 0, 0, 0.1);
+  border-color: var(--title-font);
   cursor: pointer;
   background-color: var(--background-header);
   -webkit-transition-duration: 250ms;
@@ -1523,6 +1527,9 @@ img {
   -webkit-transition-timing-function: var(--сubic);
        -o-transition-timing-function: var(--сubic);
           transition-timing-function: var(--сubic);
+}
+.close:hover, .close:focus {
+  background-color: var(--title-font);
 }
 .close:hover .close__icon, .close:focus .close__icon {
   fill: var(--button-link-color);
@@ -1614,7 +1621,7 @@ img {
   border-color: var(--button-link-color);
 }
 .application__input:hover + .application__icon, .application__input:focus-within + .application__icon {
-  fill: var(--button-link-color);
+  fill: var(--button-link-hover);
 }
 
 .icon-box {
@@ -1747,10 +1754,10 @@ input[type=checkbox] {
 }
 
 .checkbox:checked + .span-box {
-  background-color: var(--button-link-color);
+  color: var(--background-footer);
+  background-color: var(--title-font);
   background-size: contain;
   background-origin: border-box;
-  border-color: var(--button-link-color);
   background-image: url(../images/icon-check.svg);
 }
 
@@ -1780,7 +1787,7 @@ input[type=checkbox] {
 .application__link {
   display: inline-block;
   margin-left: 5px;
-  color: var(--button-link-color);
+  color: var(--title-font);
   line-height: 1.71;
   letter-spacing: 0.03em;
   font-size: 14px;
@@ -1793,13 +1800,13 @@ input[type=checkbox] {
   }
 }
 .application__link:hover, .application__link:focus {
-  color: var(--button-link-hover);
+  color: var(--main-font-color);
   -webkit-transition-duration: 250ms;
        -o-transition-duration: 250ms;
           transition-duration: 250ms;
-  -webkit-transition-timing-function: var(--сubic);
-       -o-transition-timing-function: var(--сubic);
-          transition-timing-function: var(--сubic);
+  -webkit-transition: color 300ms var(--сubic);
+  -o-transition: color 300ms var(--сubic);
+  transition: color 300ms var(--сubic);
 }
 
 .send {
@@ -1818,7 +1825,10 @@ input[type=checkbox] {
           box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
 }
 .send:hover, .send:focus {
-  background-color: var(--button-link-hover);
+  background-color: var(--title-font);
+  -webkit-transition: background-color 1000ms var(--сubic);
+  -o-transition: background-color 1000ms var(--сubic);
+  transition: background-color 1000ms var(--сubic);
 }
 @media screen and (min-width: 320px) and (max-width: 479px) {
   .send {
@@ -2032,7 +2042,7 @@ input[type=checkbox] {
   letter-spacing: 0.03em;
   text-align: left;
   color: var(--background-header);
-  background-color: rgba(33, 150, 243, 0.9);
+  background-color: var(--main-font-color);
   -webkit-transform: translateY(101%);
       -ms-transform: translateY(101%);
           transform: translateY(101%);

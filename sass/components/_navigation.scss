@@ -8,10 +8,10 @@
 
     margin-left: auto;
     border: none;
-    background-color: transparent;
+    background-color: var(--background-header);
     z-index: 1;
 
-    &.is-active .nav__icon {
+    &.is-active {
         position: fixed;
         top: 0;
         right: 0;
@@ -26,6 +26,7 @@
 
     &.is-active .nav-icon__close {
         display: block;
+        fill: var(--button-link-color)
     }
 
     &.is-active .nav-icon__open {
@@ -35,7 +36,7 @@
 
     &:hover .nav-icon__close,
     &:focus .nav-icon__close {
-        fill: var(--button-link-color)
+        fill: var(--title-font)
     }
 
 

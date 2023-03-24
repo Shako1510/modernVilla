@@ -71,7 +71,7 @@
 
     &:hover+.application__icon,
     &:focus-within+.application__icon {
-        fill: var(--button-link-color);
+        fill: var(--button-link-hover);
     }
 }
 
@@ -181,10 +181,11 @@ input[type="checkbox"] {
 }
 
 .checkbox:checked+.span-box {
-    background-color: var(--button-link-color);
+    color: var(--background-footer);
+    background-color: var(--title-font);
     background-size: contain;
     background-origin: border-box;
-    border-color: var(--button-link-color);
+    // border-color: var(--button-link-color);
     background-image: url(../images/icon-check.svg);
 }
 
@@ -214,7 +215,7 @@ input[type="checkbox"] {
 .application__link {
     display: inline-block;
     margin-left: 5px;
-    color: var(--button-link-color);
+    color: var(--title-font);
     line-height: 1.71;
     letter-spacing: 0.03em;
     font-size: 14px;
@@ -227,9 +228,9 @@ input[type="checkbox"] {
 
     &:hover,
     &:focus {
-        color: var(--button-link-hover);
+        color: var(--main-font-color);
         transition-duration: 250ms;
-        transition-timing-function: var(--сubic);
+        transition: color 300ms var(--сubic);
     }
 }
 
@@ -252,7 +253,9 @@ input[type="checkbox"] {
 
     &:hover,
     &:focus {
-        background-color: var(--button-link-hover);
+
+        background-color: var(--title-font);
+        transition: background-color 1000ms var(--сubic);
     }
 
     @media screen and (min-width: 320px) and (max-width: 479px) {

@@ -77,12 +77,17 @@
     border-radius: 50%;
 
     border: 1px solid;
-    border-color: rgba(0, 0, 0, 0.1);
+    border-color: var(--title-font);
     cursor: pointer;
     background-color: var(--background-header);
     transition-duration: 250ms;
     transition-timing-function: var(--сubic);
 
+
+    &:hover,
+    &:focus {
+        background-color: var(--title-font);
+    }
 
     &:hover .close__icon,
     &:focus .close__icon {

@@ -103,5 +103,6 @@
     &:focus {
         background-color: var(--button-link-hover);
         color: var(--main-font-color);
+        transition: color 300ms var(--сubic);
     }
 }
