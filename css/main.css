@@ -224,15 +224,14 @@ img {
 }
 .nav__btn.is-active .nav-icon__close {
   display: block;
-  fill: var(--button-link-color);
 }
 .nav__btn.is-active .nav-icon__open {
   display: none;
 }
-.nav__btn:hover .nav-icon__close, .nav__btn:focus .nav-icon__close {
+.nav__btn:hover, .nav__btn:focus {
   fill: var(--title-font);
 }
-.nav__btn:hover .nav-icon__open, .nav__btn:focus .nav-icon__open {
+.nav__btn:hover, .nav__btn:focus {
   fill: var(--button-link-color);
 }
 @media screen and (min-width: 767px) {
@@ -2046,12 +2045,11 @@ input[type=checkbox] {
   -webkit-transform: translateY(101%);
       -ms-transform: translateY(101%);
           transform: translateY(101%);
-  -webkit-transition-duration: 250ms;
-       -o-transition-duration: 250ms;
-          transition-duration: 250ms;
-  -webkit-transition-timing-function: var(--сubic);
-       -o-transition-timing-function: var(--сubic);
-          transition-timing-function: var(--сubic);
+  -webkit-transition: -webkit-transform 800ms var(--сubic);
+  transition: -webkit-transform 800ms var(--сubic);
+  -o-transition: transform 800ms var(--сubic);
+  transition: transform 800ms var(--сubic);
+  transition: transform 800ms var(--сubic), -webkit-transform 800ms var(--сubic);
 }
 @media screen and (min-width: 320px) {
   .thumb__description {

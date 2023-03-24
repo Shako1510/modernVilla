@@ -26,7 +26,7 @@
 
     &.is-active .nav-icon__close {
         display: block;
-        fill: var(--button-link-color)
+
     }
 
     &.is-active .nav-icon__open {
@@ -34,14 +34,14 @@
     }
 
 
-    &:hover .nav-icon__close,
-    &:focus .nav-icon__close {
+    &:hover,
+    &:focus {
         fill: var(--title-font)
     }
 
 
-    &:hover .nav-icon__open,
-    &:focus .nav-icon__open {
+    &:hover,
+    &:focus {
         fill: var(--button-link-color);
     }
 
@@ -50,6 +50,15 @@
         display: none;
     }
 }
+
+// .nav-icon__close {
+//     fill: var(--title-font)
+// }
+
+// .nav-icon__close:hover,
+// .nav-icon__close:focus {
+//     fill: var(--button-link-color)
+// }
 
 
 .nav {

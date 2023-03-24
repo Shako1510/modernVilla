@@ -44,8 +44,8 @@
     color: var(--background-header);
     background-color: var(--main-font-color);
     transform: translateY(101%);
-    transition-duration: 250ms;
-    transition-timing-function: var(--сubic);
+    // transition-duration: 2500ms;
+    transition: transform 800ms var(--сubic);
 
     @media screen and (min-width: 320px) {
         padding: 30px 24px;
