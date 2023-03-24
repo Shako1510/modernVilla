@@ -32,6 +32,7 @@
 .portfolio__item {
     margin-bottom: 30px;
     width: 100%;
+    box-shadow: var(--box-shadow-thumb);
 
     @media screen and (max-width: 479px) {}
 
@@ -89,9 +90,9 @@
 
 
     &:hover {
-        box-shadow: 1px 4px 6px 0px rgba(0, 0, 0, 0.16),
-            0px 4px 4px 0px rgba(0, 0, 0, 0.06),
-            0px 1px 1px 0px rgba(0, 0, 0, 0.12);
+        box-shadow: var(--box-shadow-thumb);
+        // box-shadow: inset rgba(255, 255, 255, 0.2) 8px 8px 18px 5px,
+        //     inset rgba(0, 0, 0, 0.5) -8px -8px 18px 5px;
     }
 
     &:focus {
