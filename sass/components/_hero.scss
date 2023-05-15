@@ -12,38 +12,8 @@
     background-repeat: no-repeat;
     background-position: center;
 
-
-
-    @media screen and (max-width: 767px) {
-        background: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/img14mob.jpg");
-        background-size: cover;
-        background-repeat: no-repeat;
-        background-position: center;
-
-        @media (min-device-pixel-ratio: 2),
-        (min-resolution: 192dpi),
-        (min-resolution: 2dppx) {
-
-            background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/img14-@2x-mob.jpg");
-        }
-    }
-
-    @media screen and (min-width: 768px) and (max-width: 1199px) {
-        background: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/img14-tab.jpg");
-        background-size: cover;
-        background-repeat: no-repeat;
-        background-position: center;
-
-        @media (min-device-pixel-ratio: 2),
-        (min-resolution: 192dpi),
-        (min-resolution: 2dppx) {
-
-            background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/img14-tab@2x.jpg");
-        }
-    }
-
     @media screen and (min-width: 1200px) {
-        background: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/Img14.jpg");
+        background: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../../images/villa.jpg");
         background-size: cover;
         background-repeat: no-repeat;
         background-position: center;
@@ -52,9 +22,39 @@
         (min-resolution: 192dpi),
         (min-resolution: 2dppx) {
 
-            background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/Img14-@2x.jpg");
+            background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../../images/villa.jpg");
         }
     }
+
+    // @media screen and (max-width: 767px) {
+    //     background: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/img14mob.jpg");
+    //     background-size: cover;
+    //     background-repeat: no-repeat;
+    //     background-position: center;
+
+    //     @media (min-device-pixel-ratio: 2),
+    //     (min-resolution: 192dpi),
+    //     (min-resolution: 2dppx) {
+
+    //         background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/img14-@2x-mob.jpg");
+    //     }
+    // }
+
+    // @media screen and (min-width: 768px) and (max-width: 1199px) {
+    //     background: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/img14-tab.jpg");
+    //     background-size: cover;
+    //     background-repeat: no-repeat;
+    //     background-position: center;
+
+    //     @media (min-device-pixel-ratio: 2),
+    //     (min-resolution: 192dpi),
+    //     (min-resolution: 2dppx) {
+
+    //         background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/img14-tab@2x.jpg");
+    //     }
+    // }
+
+
 }
 
 

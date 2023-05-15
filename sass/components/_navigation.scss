@@ -72,9 +72,7 @@
     margin-right: 93px;
 }
 
-.studio__nav {
-    color: var(--title-font);
-}
+
 
 
 .nav__list {
@@ -115,6 +113,13 @@
 
 
 .nav__link {
+
+    font-family: 'Roboto';
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 35px;
+    text-align: right;
+
     display: block;
     padding-top: 32px;
     padding-bottom: 32px;
