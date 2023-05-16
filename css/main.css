@@ -3,7 +3,7 @@
   --main-font: "Roboto", sans-serif;
   --main-font-color: #fafefe;
   --title-font: rgba(33, 33, 33, 1);
-  --background-header: #38b193;
+  --background-header: rgb(56, 177, 147);
   --background-team: rgba(245, 244, 250, 1);
   --background-footer: rgba(47, 48, 58, 1);
   --button-link-color: #fafefe;
@@ -25,7 +25,7 @@
   --background-color: #533f3f;
   --background-color-main: #4d685a;
   --background-button-portfolio: #F5F4FA;
-  --background-button-hover: #38b193;
+  --background-button-hover: rgb(56, 177, 147);
   --box-shadow-portfolio: 0px 4px 4px 0px rgba(0, 0, 0, 0.251);
   --box-shadow-portlolio-button: 0px 2px 2px 0px #0000001F, 0px 1px 2px 0px #00000014, 0px 3px 1px 0px #0000001A;
   --box-shadow-button-hover: 0px 2px 2px 0px #0000001F;
@@ -136,6 +136,7 @@ img {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  background: rgba(0, 0, 0, 0.45);
 }
 
 .logo {
@@ -232,7 +233,7 @@ img {
 
 .nav__item {
   padding: 0;
-  margin-right: 50px;
+  margin-right: 60px;
 }
 
 .nav-list .nav-list-item:last-child {
@@ -254,15 +255,12 @@ img {
 }
 
 .nav__link {
-  font-family: "Roboto";
-  font-weight: 400;
   font-size: 30px;
   line-height: 35px;
-  text-align: right;
   display: block;
   padding-top: 32px;
   padding-bottom: 32px;
-  color: var(--title-font);
+  color: var(--main-font-color);
   letter-spacing: 0.02em;
   text-decoration: none;
   -webkit-transition-property: color;
@@ -282,7 +280,7 @@ img {
   }
 }
 .nav__link:hover, .nav__link:focus {
-  color: var(--button-link-color);
+  color: var(--button-link-hover);
 }
 
 .link-current {
@@ -513,24 +511,74 @@ img {
   }
 }
 
-.hero__button {
-  display: inline-block;
-  padding: 10px 32px;
-  min-width: 201px;
-  font-weight: 700;
-  line-height: 1.88;
-  letter-spacing: 0.06em;
-  background-color: var(--button-link-color);
-  color: var(--background-header);
-  -webkit-box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
-          box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+.btn {
+  width: 200px;
+  position: relative;
+  padding: 5px;
+  border: 3px ridge #149CEA;
+  outline: none;
+  background-color: transparent;
+  color: white;
+  -webkit-transition: 1s;
+  -o-transition: 1s;
+  transition: 1s;
+  border-radius: 0.3em;
 }
-.hero__button:hover, .hero__button:focus {
-  background-color: var(--button-link-hover);
-  color: var(--main-font-color);
-  -webkit-transition: color 300ms var(--сubic);
-  -o-transition: color 300ms var(--сubic);
-  transition: color 300ms var(--сubic);
+
+.btn__span {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 35px;
+}
+
+.btn::after {
+  content: "";
+  position: absolute;
+  top: -10px;
+  left: 3%;
+  width: 95%;
+  height: 40%;
+  background-color: #212121;
+  -webkit-transition: 0.5s;
+  -o-transition: 0.5s;
+  transition: 0.5s;
+  -webkit-transform-origin: center;
+      -ms-transform-origin: center;
+          transform-origin: center;
+}
+
+.btn::before {
+  content: "";
+  -webkit-transform-origin: center;
+      -ms-transform-origin: center;
+          transform-origin: center;
+  position: absolute;
+  top: 80%;
+  left: 3%;
+  width: 95%;
+  height: 40%;
+  background-color: #212121;
+  -webkit-transition: 0.5s;
+  -o-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.btn:hover::before,
+.btn:hover::after {
+  -webkit-transform: scale(0);
+      -ms-transform: scale(0);
+          transform: scale(0);
+}
+
+.btn:hover {
+  -webkit-box-shadow: inset 0px 0px 25px #1479EA;
+          box-shadow: inset 0px 0px 25px #1479EA;
+}
+
+.lang {
+  font-size: 30px;
+  line-height: 35px;
 }
 
 .peculiarities {

@@ -87,7 +87,7 @@
 
 .nav__item {
     padding: 0;
-    margin-right: 50px;
+    margin-right: 60px;
 }
 
 .nav-list .nav-list-item:last-child {
@@ -114,16 +114,13 @@
 
 .nav__link {
 
-    font-family: 'Roboto';
-    font-weight: 400;
     font-size: 30px;
     line-height: 35px;
-    text-align: right;
 
     display: block;
     padding-top: 32px;
     padding-bottom: 32px;
-    color: var(--title-font);
+    color: var(--main-font-color);
     letter-spacing: 0.02em;
     text-decoration: none;
 
@@ -140,6 +137,6 @@
 
     &:hover,
     &:focus {
-        color: var(--button-link-color);
+        color: var(--button-link-hover);
     }
 }
