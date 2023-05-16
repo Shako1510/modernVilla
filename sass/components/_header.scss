@@ -1,25 +1,26 @@
 .header {
 
+
     border-bottom: 1px solid rgba(236, 236, 236, 1);
     background: rgba(0, 0, 0, 0.45);
 }
 
 .container__header {
+
     display: flex;
     align-items: center;
 
 
+    // @media screen and (max-width: 767px) {
+    //     display: block;
+    //     max-width: 767px;
+    // }
 
-    @media screen and (max-width: 767px) {
-        display: block;
-        max-width: 767px;
-    }
+    // @media screen and (min-width: 768px) {
+    //     max-width: 1200px;
+    // }
 
-    @media screen and (min-width: 768px) {
-        max-width: 1200px;
-    }
-
-    @media screen and (min-width:1200px) {
-        max-width: 1200px;
-    }
+    // @media screen and (min-width:1200px) {
+    //     max-width: 1200px;
+    // }
 }

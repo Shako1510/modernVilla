@@ -1,20 +1,19 @@
 .hero {
-    padding-top: 200px;
-    padding-bottom: 200px;
+    min-height: 1078px;
+    padding-top: 32px;
     text-align: center;
-    max-width: 1600px;
     margin-left: auto;
     margin-right: auto;
 
-    background-color: var(--background-footer);
+    // background-color: var(--background-footer);
     // background: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/img.background.jpg");
-    background-size: cover;
+    background-size: auto;
     background-repeat: no-repeat;
     background-position: center;
 
     @media screen and (min-width: 1200px) {
         background: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../../images/villa.jpg");
-        background-size: cover;
+
         background-repeat: no-repeat;
         background-position: center;
 
@@ -57,13 +56,15 @@
 
 }
 
-
+.title {
+    margin-top: 268px;
+}
 
 .hero__title {
     max-width: 696px;
     margin-left: auto;
     margin-right: auto;
-    margin-bottom: 30px;
+    margin-bottom: 42px;
 
     font-weight: 900;
     font-size: 44px;
