@@ -54,7 +54,10 @@
 body {
   font-family: var(--main-font);
   color: var(--main-font-color);
-  background-color: var(--background-header);
+  background-image: url("../../images/villa.jpg");
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
 }
 
 ul {
@@ -67,7 +70,6 @@ ul {
 }
 
 .container {
-  max-width: 1840px;
   padding-left: 80px;
   padding-right: 80px;
   margin-left: auto;
@@ -125,17 +127,6 @@ img {
 }
 
 .header {
-  border-bottom: 1px solid rgb(236, 236, 236);
-  background: rgba(0, 0, 0, 0.45);
-}
-
-.container__header {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
   background: rgba(0, 0, 0, 0.45);
 }
 
@@ -454,30 +445,10 @@ img {
 }
 
 .hero {
-  min-height: 1078px;
   padding-top: 32px;
   text-align: center;
   margin-left: auto;
   margin-right: auto;
-  background-size: auto;
-  background-repeat: no-repeat;
-  background-position: center;
-}
-@media screen and (min-width: 1200px) {
-  .hero {
-    background: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url("../../images/villa.jpg");
-    background: -o-linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../../images/villa.jpg");
-    background: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../../images/villa.jpg");
-    background-repeat: no-repeat;
-    background-position: center;
-  }
-}
-@media screen and (min-width: 1200px) and (min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (-o-min-device-pixel-ratio: 2/1), screen and (min-width: 1200px) and (min-resolution: 192dpi), screen and (min-width: 1200px) and (min-resolution: 2dppx) {
-  .hero {
-    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url("../../images/villa.jpg");
-    background-image: -o-linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../../images/villa.jpg");
-    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../../images/villa.jpg");
-  }
 }
 
 .title {

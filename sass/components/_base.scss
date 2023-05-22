@@ -1,7 +1,14 @@
 body {
+
     font-family: var(--main-font);
     color: var(--main-font-color);
-    background-color: var(--background-header);
+    // background-color: var(--background-header);
+
+    background-image: url("../../images/villa.jpg");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    // background-position: center;
+    background-attachment: fixed;
 }
 
 
@@ -13,7 +20,7 @@ ul {
 
 
 .container {
-    max-width: 1840px;
+    // width: 100%;
     padding-left: 80px;
     padding-right: 80px;
     margin-left: auto;
