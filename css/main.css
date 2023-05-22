@@ -130,6 +130,15 @@ img {
   background: rgba(0, 0, 0, 0.45);
 }
 
+.container__header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
 .logo {
   font-size: 26px;
   line-height: 0.72;
@@ -150,7 +159,7 @@ img {
   color: var(--button-link-color);
   font-family: "Roboto";
   font-weight: 500;
-  font-size: 48px;
+  font-size: 28px;
   line-height: 56px;
 }
 
@@ -246,12 +255,12 @@ img {
 }
 
 .nav__link {
-  font-size: 30px;
-  line-height: 35px;
+  font-size: 18px;
+  line-height: 20px;
   display: block;
   padding-top: 32px;
   padding-bottom: 32px;
-  color: var(--main-font-color);
+  color: rgb(255, 255, 255);
   letter-spacing: 0.02em;
   text-decoration: none;
   -webkit-transition-property: color;
@@ -271,7 +280,7 @@ img {
   }
 }
 .nav__link:hover, .nav__link:focus {
-  color: var(--button-link-hover);
+  color: rgba(255, 255, 255, 0.6);
 }
 
 .link-current {
@@ -444,13 +453,6 @@ img {
   fill: currentColor;
 }
 
-.hero {
-  padding-top: 32px;
-  text-align: center;
-  margin-left: auto;
-  margin-right: auto;
-}
-
 .title {
   margin-top: 268px;
 }
@@ -483,13 +485,13 @@ img {
 }
 
 .btn {
-  width: 200px;
+  width: 158px;
   position: relative;
   padding: 5px;
-  border: 3px ridge #149CEA;
+  border: 3px ridge #868787;
   outline: none;
-  background-color: transparent;
-  color: white;
+  background-color: ffff;
+  color: rgb(13, 13, 13);
   -webkit-transition: 1s;
   -o-transition: 1s;
   transition: 1s;
@@ -499,56 +501,20 @@ img {
 .btn__span {
   font-style: normal;
   font-weight: 700;
-  font-size: 30px;
+  font-size: 14px;
   line-height: 35px;
 }
 
-.btn::after {
-  content: "";
-  position: absolute;
-  top: -10px;
-  left: 3%;
-  width: 95%;
-  height: 40%;
-  background-color: #212121;
-  -webkit-transition: 0.5s;
-  -o-transition: 0.5s;
-  transition: 0.5s;
-  -webkit-transform-origin: center;
-      -ms-transform-origin: center;
-          transform-origin: center;
-}
-
-.btn::before {
-  content: "";
-  -webkit-transform-origin: center;
-      -ms-transform-origin: center;
-          transform-origin: center;
-  position: absolute;
-  top: 80%;
-  left: 3%;
-  width: 95%;
-  height: 40%;
-  background-color: #212121;
-  -webkit-transition: 0.5s;
-  -o-transition: 0.5s;
-  transition: 0.5s;
-}
-
-.btn:hover::before,
-.btn:hover::after {
-  -webkit-transform: scale(0);
-      -ms-transform: scale(0);
-          transform: scale(0);
-}
-
-.btn:hover {
-  -webkit-box-shadow: inset 0px 0px 25px #1479EA;
-          box-shadow: inset 0px 0px 25px #1479EA;
+.btn:hover,
+.btn:focus {
+  background-color: rgba(255, 255, 255, 0.6);
+  -webkit-transform: scale(0.5s);
+      -ms-transform: scale(0.5s);
+          transform: scale(0.5s);
 }
 
 .lang {
-  font-size: 30px;
+  font-size: 18px;
   line-height: 35px;
 }
 

@@ -114,13 +114,13 @@
 
 .nav__link {
 
-    font-size: 30px;
-    line-height: 35px;
+    font-size: 18px;
+    line-height: 20px;
 
     display: block;
     padding-top: 32px;
     padding-bottom: 32px;
-    color: var(--main-font-color);
+    color: rgba(255, 255, 255, 1);
     letter-spacing: 0.02em;
     text-decoration: none;
 
@@ -137,6 +137,7 @@
 
     &:hover,
     &:focus {
-        color: var(--button-link-hover);
+        color: rgba(255, 255, 255, 0.6);
+        ;
     }
 }

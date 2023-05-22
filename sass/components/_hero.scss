@@ -1,62 +1,62 @@
-.hero {
+// .hero {
 
-    padding-top: 32px;
-    text-align: center;
-    margin-left: auto;
-    margin-right: auto;
+// padding-top: 32px;
+// text-align: center;
+// margin-left: auto;
+// margin-right: auto;
 
-    // background-color: var(--background-footer);
-    // background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../../images/villa.jpg");
-    // background-size: auto;
-    // background-repeat: no-repeat;
-    // background-position: center;
-
-
-
-    // @media screen and (min-width: 1200px) {
-    //     background: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../../images/villa.jpg");
-
-    //     background-repeat: no-repeat;
-    //     background-position: center;
-
-    //     @media (min-device-pixel-ratio: 2),
-    //     (min-resolution: 192dpi),
-    //     (min-resolution: 2dppx) {
-
-    //         background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../../images/villa.jpg");
-    //     }
-    // }
-
-    // @media screen and (max-width: 767px) {
-    //     background: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/img14mob.jpg");
-    //     background-size: cover;
-    //     background-repeat: no-repeat;
-    //     background-position: center;
-
-    //     @media (min-device-pixel-ratio: 2),
-    //     (min-resolution: 192dpi),
-    //     (min-resolution: 2dppx) {
-
-    //         background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/img14-@2x-mob.jpg");
-    //     }
-    // }
-
-    // @media screen and (min-width: 768px) and (max-width: 1199px) {
-    //     background: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/img14-tab.jpg");
-    //     background-size: cover;
-    //     background-repeat: no-repeat;
-    //     background-position: center;
-
-    //     @media (min-device-pixel-ratio: 2),
-    //     (min-resolution: 192dpi),
-    //     (min-resolution: 2dppx) {
-
-    //         background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/img14-tab@2x.jpg");
-    //     }
-    // }
+// background-color: var(--background-footer);
+// background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../../images/villa.jpg");
+// background-size: auto;
+// background-repeat: no-repeat;
+// background-position: center;
 
 
-}
+
+// @media screen and (min-width: 1200px) {
+//     background: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../../images/villa.jpg");
+
+//     background-repeat: no-repeat;
+//     background-position: center;
+
+//     @media (min-device-pixel-ratio: 2),
+//     (min-resolution: 192dpi),
+//     (min-resolution: 2dppx) {
+
+//         background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../../images/villa.jpg");
+//     }
+// }
+
+// @media screen and (max-width: 767px) {
+//     background: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/img14mob.jpg");
+//     background-size: cover;
+//     background-repeat: no-repeat;
+//     background-position: center;
+
+//     @media (min-device-pixel-ratio: 2),
+//     (min-resolution: 192dpi),
+//     (min-resolution: 2dppx) {
+
+//         background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/img14-@2x-mob.jpg");
+//     }
+// }
+
+// @media screen and (min-width: 768px) and (max-width: 1199px) {
+//     background: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/img14-tab.jpg");
+//     background-size: cover;
+//     background-repeat: no-repeat;
+//     background-position: center;
+
+//     @media (min-device-pixel-ratio: 2),
+//     (min-resolution: 192dpi),
+//     (min-resolution: 2dppx) {
+
+//         background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/img14-tab@2x.jpg");
+//     }
+// }
+
+
+// }
 
 .title {
     margin-top: 268px;
@@ -91,13 +91,13 @@
 
 
 .btn {
-    width: 200px;
+    width: 158px;
     position: relative;
     padding: 5px;
-    border: 3px ridge #149CEA;
+    border: 3px ridge #868787;
     outline: none;
-    background-color: transparent;
-    color: white;
+    background-color: ffff;
+    color: rgb(13, 13, 13);
     transition: 1s;
     border-radius: 0.3em;
 
@@ -107,48 +107,55 @@
 
     font-style: normal;
     font-weight: 700;
-    font-size: 30px;
+    font-size: 14px;
     line-height: 35px;
 
 }
 
-.btn::after {
-    content: "";
-    position: absolute;
-    top: -10px;
-    left: 3%;
-    width: 95%;
-    height: 40%;
-    background-color: #212121;
-    transition: 0.5s;
-    transform-origin: center;
+// .btn::after {
+//     content: "";
+//     position: absolute;
+//     top: -10px;
+//     left: 3%;
+//     width: 95%;
+//     height: 30%;
+//     background-color: #212121;
+//     transition: 0.5s;
+//     transform-origin: center;
+// }
+
+// .btn::before {
+//     content: "";
+//     transform-origin: center;
+//     position: absolute;
+//     top: 80%;
+//     left: 3%;
+//     width: 95%;
+//     height: 30%;
+//     background-color: #212121;
+//     transition: 0.5s;
+// }
+
+// .btn:hover::before,
+// .btn:hover::after {
+//     transform: scale(0)
+// }
+
+.btn:hover,
+.btn:focus {
+    // box-shadow: inset 0px 0px 25px #969798;
+    background-color: rgba(255, 255, 255, 0.6);
+    transform: scale(0.5s)
 }
 
-.btn::before {
-    content: "";
-    transform-origin: center;
-    position: absolute;
-    top: 80%;
-    left: 3%;
-    width: 95%;
-    height: 40%;
-    background-color: #212121;
-    transition: 0.5s;
-}
+// .btn:hover {
 
-.btn:hover::before,
-.btn:hover::after {
-    transform: scale(0)
-}
-
-.btn:hover {
-    box-shadow: inset 0px 0px 25px #1479EA;
-}
+// }
 
 
 .lang {
 
-    font-size: 30px;
+    font-size: 18px;
     line-height: 35px;
 
 }
