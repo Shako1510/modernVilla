@@ -55,9 +55,9 @@ body {
   font-family: var(--main-font);
   color: var(--main-font-color);
   background-image: url("../../images/villa.jpg");
-  background-size: 100% 100%;
+  background-size: cover;
   background-repeat: no-repeat;
-  background-attachment: fixed;
+  background-position: center;
 }
 
 ul {
@@ -582,6 +582,24 @@ img {
   -webkit-transform: scale(0.5s);
       -ms-transform: scale(0.5s);
           transform: scale(0.5s);
+}
+
+.box-icon-svg {
+  margin-right: 654px;
+}
+
+.arrow {
+  width: 100%;
+}
+.arrow:hover {
+  -webkit-transform: translateX(10px);
+      -ms-transform: translateX(10px);
+          transform: translateX(10px);
+  -webkit-transition: -webkit-transform 300ms var(--сubic);
+  transition: -webkit-transform 300ms var(--сubic);
+  -o-transition: transform 300ms var(--сubic);
+  transition: transform 300ms var(--сubic);
+  transition: transform 300ms var(--сubic), -webkit-transform 300ms var(--сubic);
 }
 
 .peculiarities {

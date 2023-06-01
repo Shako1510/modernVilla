@@ -124,14 +124,11 @@
         bottom: -416px;
     }
 
-    // 50% {
-    //     bottom: -108px;
-    // }
-
     100% {
         bottom: 0;
     }
 }
+
 
 
 .box__overlay {
@@ -163,6 +160,7 @@
     font-weight: 700;
     font-size: 24px;
     text-transform: uppercase;
+
 
 }
 
@@ -278,3 +276,19 @@
 //         transition: color 300ms var(--сubic);
 //     }
 // }
+
+.box-icon-svg {
+    margin-right: 654px;
+
+}
+
+.arrow {
+
+    width: 100%;
+
+    &:hover {
+        transform: translateX(+10px);
+        transition: transform 300ms var(--сubic);
+    }
+
+}
